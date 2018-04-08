@@ -32,11 +32,11 @@ $(document).ready(function(){
 		            	if(data.auth)
 		            		window.location.href = SITE_URL+data.intended;
 		            	else
-		            		$('#loginForm #errorMsg').text('Some error occured, please try again!');
+		            		$('#loginForm #errorMsg').show().text('Some error occured, please try again!');
 		            },
 		            error:function(xhr){
 		            	console.log(xhr.responseJSON.message);
-		            	$('#loginForm #errorMsg').text(xhr.responseJSON.message);
+		            	$('#loginForm #errorMsg').show().text(xhr.responseJSON.message);
 		            }
 		        });
 			}

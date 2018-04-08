@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" id="loginForm">
                         @csrf
-                        <label class="alert alert-danger" id="errorMsg"></label>
+                        <label class="alert alert-danger" id="errorMsg" style="display: none"></label>
                         <div class="form-group row">
                             <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
